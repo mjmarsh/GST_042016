@@ -76,15 +76,23 @@ Day-by-Day Tasks
 	
 	7. Lastly, click 'Perform rename'.  You will see your changes take effect instantly in the windows file explorer
 
-4/26- Update shapefiles with new data (address_points_q1_2016, buildings_q1_2016, pipelines_npms_q2_2016, railroads_slu, railroads_state, sirens_q2_2016, treatments_q1_2016, )
+4/26- Update shapefiles with new data (address_points_q1_2016, buildings_q1_2016, pipelines_q2_2016, railroads_slu, railroads_state, sirens_q2_2016, treatments_q1_2016, )
 
 	Copy/paste gst.xml of old files to new, find and replace shapefile name
 
-5/2- Add in new Layers (hazmat_q2_2016, school_buildings_q2_2016)
+5/2- Add in new Layers (hazmat_sites_q2_2016, school_buildings_q2_2016)
 
 5/6- Styling of new layers, correcting school addresses v. address points
 
 5/9- Add in and style driveways, finish school addresses
+
+5/10- Create ICS symbols, add to GST.  Import pre-attack layers, style.
+
+5/12- Import and style ICS symbology
+
+5/13- Style and display fire history
+
+5/16- Document all display/label levels, back up newest cut to x drive, solve GPS issue
 
 Next Step: BETA TEST
 
