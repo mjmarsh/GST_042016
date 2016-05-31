@@ -94,7 +94,17 @@ Day-by-Day Tasks
 
 5/16- Document all display/label levels, back up newest cut to x drive, solve GPS issue
 
-Next Step: BETA TEST
+5/18- Beta Testing begins
+
+5/24- Station 15 vehicles receive new version
+
+5/25- Chiefs receive new version, version backed up on x
+
+5/26- Turn mobile_homes_etc, parcels_q4_2015 layers on
+
+5/27- Add in airport, change local roads to display at 100,000
+
+5/31- 3419 recieves newest update 05312016
 
 
 
