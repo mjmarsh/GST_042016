@@ -106,5 +106,18 @@ Day-by-Day Tasks
 
 5/31- 3419 recieves newest update 05312016
 
+6/6- Fix city_limits display settings, change:
+
+	A. Move layer below districts
+
+	B. Make layer selectable & visible on Aerial
+
+	C. Change multiple displays to one symbol: Outline Yellow 3pt, 150 transparency for day, night, aerial
+
+	D. Check box for field tab, city_name
+
+6/7- Backup newest version
+	
+
 
 
