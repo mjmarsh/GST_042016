@@ -4,16 +4,16 @@ Documentation for 2016 update
 General Notes
 
 	A. When renaming shapefiles, must manually change file path in CurrentMap .gprj file
-		- Add shapefile to CurrentMap folder, then add through GST Layer Control, then in .gprj (path)
+		- Add shapefile to CurrentMap folder, then add through GST Layer Control
 		- GST will rename all letters to lowercase by default
 
 	B. In GST, Settings > Settings > Map > Save Map extent on exit
 
-	C. We like the 1:5,000 default map scale, allows for one zoom to display addresses & hydrants
+	C. We like the 1:10,000 default map scale, allows for two zooms to display addresses, hazmat & hydrants
 
-	D. Used Beyond Compare to copy GST folder to other MDC to preserve xml styling
+	D. Use Beyond Compare to copy GST folder to other MDC to preserve xml styling
 
-	E. Did not update to 2014 Aerial 
+	E. Did NOT update to 2014 Aerial 
 
 Goals
 
@@ -106,6 +106,8 @@ Day-by-Day Tasks
 
 5/31- 3419 recieves newest update 05312016
 
+6/3- Send styled GST package for processing
+
 6/6- Fix city_limits display settings, change:
 
 	A. Move layer below districts
@@ -116,7 +118,25 @@ Day-by-Day Tasks
 
 	D. Check box for field tab, city_name
 
-6/7- Backup newest version
+6/7- Backup newest version, fix city boundaries to make visible and selectable
+
+6/9- Reformat and combine firestations_slu, firestations_contract (now firestations_local). + firestations_USFS
+
+	Turn driveways on at 10,000 zoom
+
+	Change flammable symbols at SLO airport
+
+6/10- Compile documents for "Chief Document Folder" (CCOP, FDOP, etc.) to reside on Desktop
+
+6/13-6/15- Devise rollout plan by Battalion, solicit constructive feedback (cell-phone pics, screenshots, verbal, written)
+
+	Day 1: Battalions 1,6
+
+	Day 2: Battalions 2,4
+
+	Day 3: Battalions 3,5
+
+6/16- Create GST Quick Reference Guide
 	
 
 
