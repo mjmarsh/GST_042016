@@ -126,9 +126,37 @@ Day-by-Day Tasks
 
 	Change flammable symbols at SLO airport
 
-6/10- Compile documents for "Chief Document Folder" (CCOP, FDOP, etc.) to reside on Desktop
+6/10- Compile documents for "Chief Document Folder" (CCOP, FDOP, etc.) to reside on MDC Desktop
 
-6/13-6/15- Devise rollout plan by Battalion, solicit constructive feedback (cell-phone pics, screenshots, verbal, written)
+6/13- Make all layers selectable/identifiable. Add slu_helibase, slu_tactical_staging, slu_base_camp symbols.  Refine local fire history to 1900-2015
+
+6/14- Add BLM layers blm_preferred_dozerline, blm_wilderness_sensitive_areas.  Insert and symbolize new fire stations layer, firestations_slu_all.
+
+6/15- Export roads that are not already in GST from OpenStreetMap.
+
+6/20- B3406 given new cut, fixed parcel and hazmat sites zoom layer issue.  What to do about state parcels, if anything?
+
+6/22- New style for mobile_homes_etc layer labels
+
+6/23- Development for new Santa Barbara GST begins
+
+	1. Create new folder under GST Mapper> SBCurrentMap.  
+
+	2. Copy/paste CurrentMap.gprj contents into new SantaBarbara.gprj file.
+
+	3. Delete all shapefiles not needed for SB. 
+
+	4. Only change needed to load this 'new' GST for Santa Barbara is to edit the 'default.gprj' file. Change text from 'CurrentMap.gprj' to 'SantaBarbara.gprj'
+
+	5. Clip all needed data layers to SB County and style same as slo
+
+	*Need to figure out way to easily switch to different GST when going out of county.  A button? 
+
+	**We will do this same process for all counties/units surrounding slo; Monterey (BEU), Kern, Ventura
+
+6/24- Speak with Fresno about how they switch between County GST's
+
+6/30- Devise rollout plan by Battalion, solicit constructive feedback (cell-phone pics, screenshots, verbal, written)
 
 	Day 1: Battalions 1,6
 
@@ -136,7 +164,7 @@ Day-by-Day Tasks
 
 	Day 3: Battalions 3,5
 
-6/16- Create GST Quick Reference Guide
+7/1- Create GST Quick Reference Guide
 	
 
 
