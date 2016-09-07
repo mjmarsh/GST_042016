@@ -165,6 +165,8 @@ Day-by-Day Tasks
 	Day 3: Battalions 3,5
 
 7/1- Create GST Quick Reference Guide
+
+9/5- Updated shapefiles: dunes_oceano_points_q3_2016
 	
 
 
