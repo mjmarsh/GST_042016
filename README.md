@@ -166,7 +166,7 @@ Day-by-Day Tasks
 
 7/1- Create GST Quick Reference Guide
 
-9/5- Updated shapefiles: dunes_oceano_points_q3_2016
+9/5- Updated shapefiles: dunes_oceano_points_q3_2016, dunes_oceano_roads_q3_2016
 	
 
 
