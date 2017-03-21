@@ -1,4 +1,4 @@
-# GST_042016
+# GST_2016-2017
 Documentation for 2016 update
 
 General Notes
@@ -167,6 +167,20 @@ Day-by-Day Tasks
 7/1- Create GST Quick Reference Guide
 
 9/5- Updated shapefiles: dunes_oceano_points_q3_2016, dunes_oceano_roads_q3_2016
+
+12/1- Beginning of driveways task manager in OSM for future-routing
+
+3/20- In-house roads copy, then edit for GST-specific purposes using:
+
+	GST Class	GST Description		FCC			Description
+	A91					P00			High speed ramp
+	A89		Freeway			P01			Interstate
+	A90		Major			P02, P03		State Highway, Arterial (main thouroghfares)
+	A40		Local			P04,P05,P06,P10, P11	Collector, light duty, alley, private, trail
+	
+3/21- Routing issues on Hwy 166, Morro, new communities
+	
+	
 	
 
 
