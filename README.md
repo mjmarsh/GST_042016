@@ -170,6 +170,12 @@ Day-by-Day Tasks
 
 12/1- Beginning of driveways task manager in OSM for future-routing
 
+**KEY LESSON**
+
+A copy of the county's newest road geodatabase must be made and edited as a seperate file.  This is done to provide for attribute field schema differences between the data processing and routing of GST and CAD systems.
+
+3/19- Removed 'Unnamed Rd' labels, as they are not helpful and take up space (visually)
+
 3/20- In-house roads copy, then edit for GST-specific purposes using:
 
 	GST Class	GST Description		FCC			Description
@@ -178,7 +184,7 @@ Day-by-Day Tasks
 	A90		Major			P02, P03		State Highway, Arterial (main thouroghfares)
 	A40		Local			P04,P05,P06,P10, P11	Collector, light duty, alley, private, trail
 	
-3/21- Routing issues on Hwy 166, Morro, new communities
+3/21- Routing issues on Hwy 166, Morro, new communities, trails (must change one_way field from B--->N in order to prevent routing up 	       mountain bike/hiking trails)
 	
 	
 	
