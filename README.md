@@ -185,6 +185,8 @@ A copy of the county's newest road geodatabase must be made and edited as a sepe
 	A40		Local			P04,P05,P06,P10, P11	Collector, light duty, alley, private, trail
 	
 3/21- Routing issues on Hwy 166, Morro, new communities, trails (must change one_way field from B--->N in order to prevent routing up 	       mountain bike/hiking trails)
+
+3/23- In-house roads layer and OSM driveways used to edit roads in order to route up long, rural driveways.
 	
 	
 	
