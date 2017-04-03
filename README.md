@@ -187,6 +187,12 @@ A copy of the county's newest road geodatabase must be made and edited as a sepe
 3/21- Routing issues on Hwy 166, Morro, new communities, trails (must change one_way field from B--->N in order to prevent routing up 	       mountain bike/hiking trails)
 
 3/23- In-house roads layer and OSM driveways used to edit roads in order to route up long, rural driveways.  For sending off road processing in GST, roads must be broken up at intersections. 
+
+4/3- FCC code fixes for changing local--> major roads.  Addition of some trails to GST_roads layer from OSM export.
+
+4/4- More trails.
+
+4/5- Send to GST for processing
 	
 	
 	
