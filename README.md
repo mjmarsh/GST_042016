@@ -190,7 +190,7 @@ A copy of the county's newest road geodatabase must be made and edited as a sepe
 
 4/3- FCC code fixes for changing local--> major roads.  Addition of some trails to GST_roads layer from OSM export.
 
-4/4- More trails.
+4/4- Trails: Bishop's Peak, Cerro San Luis, Irish Hills, Cuesta Grade
 
 4/5- Send to GST for processing
 	
