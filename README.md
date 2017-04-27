@@ -193,7 +193,10 @@ A copy of the county's newest road geodatabase must be made and edited as a sepe
 4/4- Trails: Bishop's Peak, Cerro San Luis, Irish Hills, Cuesta Grade
 
 4/5- Send to GST for processing
-	
+
+4/8- Updated address points
+
+4/21- Double-check road network for dangles in extra driveways using QGIS Disconnected Island Plugin http://plugins.qgis.org/plugins/disconnected-islands/
 	
 	
 
