@@ -198,7 +198,7 @@ A copy of the county's newest road geodatabase must be made and edited as a sepe
 
 4/21- Double-check road network for dangles in extra driveways using QGIS Disconnected Island Plugin http://plugins.qgis.org/plugins/disconnected-islands/
 	
-	
+5/5- DPA/SRA clip for surrounding counties.  Also utilized QGIS 'FLoating Islands' Plugin for OSM roads to update roads, tracks network (view only, not routable) https://github.com/mjmarsh/QGIS_Plugins	
 
 
 
