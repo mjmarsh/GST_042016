@@ -200,5 +200,263 @@ A copy of the county's newest road geodatabase must be made and edited as a sepe
 	
 5/5- DPA/SRA clip for surrounding counties.  Also utilized QGIS 'FLoating Islands' Plugin for OSM roads to update roads, tracks network (view only, not routable) https://github.com/mjmarsh/QGIS_Plugins	
 
+5/15- Addition of new extents layers: pre-attacks, interactive topo quads
+
+**KEY LAYER STYLING XML**
+
+	ADDRESSES:  <Symbol>
+    <SymbolClassification>One symbol</SymbolClassification>
+    <SymbolSize>12</SymbolSize>
+    <LineShadeSymbol>0</LineShadeSymbol>
+    <MarkerSymbol>X</MarkerSymbol>
+    <MarkerSymbolSet>GST Symbol</MarkerSymbolSet>
+    <LineSymbolSet>GST Symbol</LineSymbolSet>
+    <ShadeSymbolSet>GST Symbol</ShadeSymbolSet>
+    <MarkerSymbolIsImage>n</MarkerSymbolIsImage>
+    <SymbolMarkerImagePath />
+    <SymbolFGColor>0,255,128,64</SymbolFGColor>
+    <SymbolBGColor>255,255,128,64</SymbolBGColor>
+    <SymbolShadeOutlineColor>255,0,0,0</SymbolShadeOutlineColor>
+    <SymbolShadeOutlineSymbol>0</SymbolShadeOutlineSymbol>
+    <SymbolShadeImagePath />
+    <SymbolFGColorNight>0,0,255,0</SymbolFGColorNight>
+    <SymbolBGColorNight>255,0,255,0</SymbolBGColorNight>
+    <SymbolShadeOutlineColorNight>255,0,255,0</SymbolShadeOutlineColorNight>
+    <SymbolFGColorAerial>0,255,128,64</SymbolFGColorAerial>
+    <SymbolBGColorAerial>255,255,128,64</SymbolBGColorAerial>
+    <SymbolShadeOutlineColorAerial>255,255,128,64</SymbolShadeOutlineColorAerial>
+    <SymbolField>id</SymbolField>
+    <SymbolFieldValueList />
+    <UseSymbolSizeByScale>n</UseSymbolSizeByScale>
+    <SymbolSizeByScale />
+    <ShowLineCasing>n</ShowLineCasing>
+    <LineCasingColor>255, 78, 78, 78</LineCasingColor>
+    <CasingScaleFrom>0</CasingScaleFrom>
+    <CasingScaleTo>50000</CasingScaleTo>
+ 	 </Symbol>
+	
+	buildings: <Symbol>
+    <SymbolClassification>One symbol</SymbolClassification>
+    <SymbolSize>1</SymbolSize>
+    <LineShadeSymbol>53</LineShadeSymbol>
+    <MarkerSymbol>X</MarkerSymbol>
+    <MarkerSymbolSet>GST Symbol</MarkerSymbolSet>
+    <LineSymbolSet>GST Symbol</LineSymbolSet>
+    <ShadeSymbolSet>GST Symbol</ShadeSymbolSet>
+    <MarkerSymbolIsImage>n</MarkerSymbolIsImage>
+    <SymbolMarkerImagePath />
+    <SymbolFGColor>255,182,168,154</SymbolFGColor>
+    <SymbolBGColor>255,255,128,64</SymbolBGColor>
+    <SymbolShadeOutlineColor>255,0,0,0</SymbolShadeOutlineColor>
+    <SymbolShadeOutlineSymbol>0</SymbolShadeOutlineSymbol>
+    <SymbolShadeImagePath />
+    <SymbolFGColorNight>255,52,154,184</SymbolFGColorNight>
+    <SymbolBGColorNight>255,0,255,0</SymbolBGColorNight>
+    <SymbolShadeOutlineColorNight>125,255,255,255</SymbolShadeOutlineColorNight>
+    <SymbolFGColorAerial>70,155,163,232</SymbolFGColorAerial>
+    <SymbolBGColorAerial>255,255,128,64</SymbolBGColorAerial>
+    <SymbolShadeOutlineColorAerial>255,55,4,123</SymbolShadeOutlineColorAerial>
+    <SymbolField>osm_id</SymbolField>
+    <SymbolFieldValueList />
+    <UseSymbolSizeByScale>n</UseSymbolSizeByScale>
+    <SymbolSizeByScale />
+    <ShowLineCasing>n</ShowLineCasing>
+    <LineCasingColor>255, 78, 78, 78</LineCasingColor>
+    <CasingScaleFrom>0</CasingScaleFrom>
+    <CasingScaleTo>50000</CasingScaleTo>
+  	</Symbol>
+	
+	DPA: <Symbol>
+    <SymbolClassification>Multiple symbol</SymbolClassification>
+    <SymbolSize>12</SymbolSize>
+    <LineShadeSymbol>0</LineShadeSymbol>
+    <MarkerSymbol>X</MarkerSymbol>
+    <MarkerSymbolSet>GST Symbol</MarkerSymbolSet>
+    <LineSymbolSet>GST Symbol</LineSymbolSet>
+    <ShadeSymbolSet>GST Symbol</ShadeSymbolSet>
+    <MarkerSymbolIsImage>n</MarkerSymbolIsImage>
+    <SymbolMarkerImagePath />
+    <SymbolFGColor>255,255,128,64</SymbolFGColor>
+    <SymbolBGColor>255,255,128,64</SymbolBGColor>
+    <SymbolShadeOutlineColor>255,0,0,0</SymbolShadeOutlineColor>
+    <SymbolShadeOutlineSymbol>0</SymbolShadeOutlineSymbol>
+    <SymbolShadeImagePath />
+    <SymbolFGColorNight>255,0,255,0</SymbolFGColorNight>
+    <SymbolBGColorNight>255,0,255,0</SymbolBGColorNight>
+    <SymbolShadeOutlineColorNight>255,0,255,0</SymbolShadeOutlineColorNight>
+    <SymbolFGColorAerial>255,255,128,64</SymbolFGColorAerial>
+    <SymbolBGColorAerial>255,255,128,64</SymbolBGColorAerial>
+    <SymbolShadeOutlineColorAerial>255,255,128,64</SymbolShadeOutlineColorAerial>
+    <SymbolField>dpa_agency</SymbolField>
+    <SymbolFieldValueList>BLM»GST Symbol,23,150,128,0,0,0,252,226,203,210,128,0,0,0,2,,150,128,0,0,0,45,45,45,255,128,0,0,0,128,0,0,0,45,45,128,100,128,0,0¶CDF»GST Symbol,53,0,243,221,255,0,243,221,255,0,0,255,128,0,2,,0,75,75,75,255,75,75,75,0,0,255,128,0,75,75,75,255,75,75,0,0,128,255,128¶DOD»GST Symbol,23,150,0,0,0,0,185,185,255,210,0,0,0,0,2,,150,0,0,0,0,90,90,90,210,0,0,0,0,192,192,192,0,90,90,0,100,0,0,0¶LOCAL»GST Symbol,1,0,0,0,255,0,232,190,245,0,0,0,255,0,1,,0,0,0,255,0,105,105,105,0,0,0,255,0,0,0,255,0,105,105,0,0,0,0,255¶UFW»GST Symbol,4,0,0,64,0,0,164,186,238,0,0,64,0,0,1,,0,0,64,0,0,150,150,150,0,0,64,0,0,0,64,0,0,150,150,0,0,0,64,0¶USF»GST Symbol,22,150,0,64,0,0,138,255,193,210,0,64,0,0,2,,150,0,64,0,0,165,165,165,210,0,64,0,0,0,255,0,0,165,165,0,210,0,128,0</SymbolFieldValueList>
+    <UseSymbolSizeByScale>n</UseSymbolSizeByScale>
+    <SymbolSizeByScale />
+    <ShowLineCasing>n</ShowLineCasing>
+    <LineCasingColor>255, 78, 78, 78</LineCasingColor>
+    <CasingScaleFrom>0</CasingScaleFrom>
+    <CasingScaleTo>50000</CasingScaleTo>
+ 	 </Symbol>
+	 
+	SRA:  <Symbol>
+    <SymbolClassification>Multiple symbol</SymbolClassification>
+    <SymbolSize>1</SymbolSize>
+    <LineShadeSymbol>0</LineShadeSymbol>
+    <MarkerSymbol>X</MarkerSymbol>
+    <MarkerSymbolSet>GST Symbol</MarkerSymbolSet>
+    <LineSymbolSet>GST Symbol</LineSymbolSet>
+    <ShadeSymbolSet>GST Symbol</ShadeSymbolSet>
+    <MarkerSymbolIsImage>n</MarkerSymbolIsImage>
+    <SymbolMarkerImagePath />
+    <SymbolFGColor>255,255,128,64</SymbolFGColor>
+    <SymbolBGColor>255,255,128,64</SymbolBGColor>
+    <SymbolShadeOutlineColor>255,0,0,0</SymbolShadeOutlineColor>
+    <SymbolShadeOutlineSymbol>0</SymbolShadeOutlineSymbol>
+    <SymbolShadeImagePath />
+    <SymbolFGColorNight>255,0,255,0</SymbolFGColorNight>
+    <SymbolBGColorNight>255,0,255,0</SymbolBGColorNight>
+    <SymbolShadeOutlineColorNight>255,0,255,0</SymbolShadeOutlineColorNight>
+    <SymbolFGColorAerial>255,255,128,64</SymbolFGColorAerial>
+    <SymbolBGColorAerial>255,255,128,64</SymbolBGColorAerial>
+    <SymbolShadeOutlineColorAerial>255,255,128,64</SymbolShadeOutlineColorAerial>
+    <SymbolField>sra</SymbolField>
+    <SymbolFieldValueList>FRA»GST Symbol,53,210,89,156,80,210,248,248,207,255,61,94,55,0,2,,255,12,66,81,255,30,30,30,255,6,36,45,50,79,153,43,50,30,30,6,100,52,109,35¶LRA»GST Symbol,53,210,255,255,145,214,255,168,81,210,221,196,19,0,2,,255,8,49,75,255,45,45,45,255,6,36,45,0,45,45,45,255,45,45,6,100,198,198,0¶SRA»GST Symbol,53,210,185,218,154,210,194,254,163,210,97,134,64,0,2,,255,20,101,116,255,60,60,60,0,233,233,233,0,60,60,60,255,60,60,233,100,179,255,102</SymbolFieldValueList>
+    <UseSymbolSizeByScale>n</UseSymbolSizeByScale>
+    <SymbolSizeByScale />
+    <ShowLineCasing>n</ShowLineCasing>
+    <LineCasingColor>255, 78, 78, 78</LineCasingColor>
+    <CasingScaleFrom>0</CasingScaleFrom>
+    <CasingScaleTo>50000</CasingScaleTo>
+ 	 </Symbol>
+	
+	STATIONS:   <Symbol>
+    <SymbolClassification>Multiple symbol</SymbolClassification>
+    <SymbolSize>12</SymbolSize>
+    <LineShadeSymbol>0</LineShadeSymbol>
+    <MarkerSymbol>X</MarkerSymbol>
+    <MarkerSymbolSet>GST Symbol</MarkerSymbolSet>
+    <LineSymbolSet>GST Symbol</LineSymbolSet>
+    <ShadeSymbolSet>GST Symbol</ShadeSymbolSet>
+    <MarkerSymbolIsImage>n</MarkerSymbolIsImage>
+    <SymbolMarkerImagePath />
+    <SymbolFGColor>255,255,128,64</SymbolFGColor>
+    <SymbolBGColor>255,255,128,64</SymbolBGColor>
+    <SymbolShadeOutlineColor>255,0,0,0</SymbolShadeOutlineColor>
+    <SymbolShadeOutlineSymbol>0</SymbolShadeOutlineSymbol>
+    <SymbolShadeImagePath />
+    <SymbolFGColorNight>255,0,255,0</SymbolFGColorNight>
+    <SymbolBGColorNight>255,0,255,0</SymbolBGColorNight>
+    <SymbolShadeOutlineColorNight>255,0,255,0</SymbolShadeOutlineColorNight>
+    <SymbolFGColorAerial>255,255,128,64</SymbolFGColorAerial>
+    <SymbolBGColorAerial>255,255,128,64</SymbolBGColorAerial>
+    <SymbolShadeOutlineColorAerial>255,255,128,64</SymbolShadeOutlineColorAerial>
+    <SymbolField>sta_type</SymbolField>
+    <SymbolFieldValueList>AAB»GST Symbol,X,12,210,248,248,207,C:\GST\GST Mapper\CurrentMap\Symbol\AirAttack.png,y,255,0,0,0,255,0,0,0¶CALFIRE_OR_COUNTY»GST Symbol,X,12,210,252,226,203,C:\GST\GST Mapper\CurrentMap\Symbol\firestation2.PNG,y,255,0,0,0,255,0,0,0¶CC»GST Symbol,X,12,210,194,254,163,C:\GST\GST Mapper\CurrentMap\Symbol\chainsaw.PNG,y,255,0,0,0,255,0,0,0¶LOCAL»GST Symbol,X,12,210,243,221,255,C:\GST\GST Mapper\CurrentMap\Symbol\FireStationBlue.png,y,255,0,0,0,255,0,0,0¶USFS»GST Symbol,X,12,210,185,185,255,C:\GST\GST Mapper\CurrentMap\Symbol\firestation_USFS.PNG,y,255,0,0,0,255,0,0,0</SymbolFieldValueList>
+    <UseSymbolSizeByScale>n</UseSymbolSizeByScale>
+    <SymbolSizeByScale />
+    <ShowLineCasing>n</ShowLineCasing>
+    <LineCasingColor>255, 78, 78, 78</LineCasingColor>
+    <CasingScaleFrom>0</CasingScaleFrom>
+    <CasingScaleTo>50000</CasingScaleTo>
+  	</Symbol>
+	
+	ROADS:
+	- FREEWAY: <Symbol>
+    <SymbolClassification>One symbol</SymbolClassification>
+    <SymbolSize>3</SymbolSize>
+    <LineShadeSymbol>0</LineShadeSymbol>
+    <MarkerSymbol>X</MarkerSymbol>
+    <MarkerSymbolSet>GST Symbol</MarkerSymbolSet>
+    <LineSymbolSet>GST Symbol</LineSymbolSet>
+    <ShadeSymbolSet>GST Symbol</ShadeSymbolSet>
+    <MarkerSymbolIsImage>n</MarkerSymbolIsImage>
+    <SymbolMarkerImagePath />
+    <SymbolFGColor>255,255,0,0</SymbolFGColor>
+    <SymbolBGColor>255,255,128,64</SymbolBGColor>
+    <SymbolShadeOutlineColor>255,0,0,0</SymbolShadeOutlineColor>
+    <SymbolShadeOutlineSymbol>0</SymbolShadeOutlineSymbol>
+    <SymbolShadeImagePath />
+    <SymbolFGColorNight>255,255,0,0</SymbolFGColorNight>
+    <SymbolBGColorNight>255,255,128,64</SymbolBGColorNight>
+    <SymbolShadeOutlineColorNight>255,255,128,64</SymbolShadeOutlineColorNight>
+    <SymbolFGColorAerial>0,255,0,0</SymbolFGColorAerial>
+    <SymbolBGColorAerial>255,255,128,64</SymbolBGColorAerial>
+    <SymbolShadeOutlineColorAerial>255,255,128,64</SymbolShadeOutlineColorAerial>
+    <SymbolField>street</SymbolField>
+    <SymbolFieldValueList />
+    <UseSymbolSizeByScale>y</UseSymbolSizeByScale>
+    <SymbolSizeByScale>0,3000,12@3001,4000,10@4001,5000,10@5001,8000,10@8001,11000,8@11001,16000,6@16001,24000,4@24001,35000,2@35001,200000,2</SymbolSizeByScale>
+    <ShowLineCasing>y</ShowLineCasing>
+    <LineCasingColor>255, 78, 78, 78</LineCasingColor>
+    <CasingScaleFrom>0</CasingScaleFrom>
+    <CasingScaleTo>50000</CasingScaleTo>
+	  </Symbol>
+	  
+	- MAJOR: <Symbol>
+    <SymbolClassification>One symbol</SymbolClassification>
+    <SymbolSize>2</SymbolSize>
+    <LineShadeSymbol>0</LineShadeSymbol>
+    <MarkerSymbol>X</MarkerSymbol>
+    <MarkerSymbolSet>GST Symbol</MarkerSymbolSet>
+    <LineSymbolSet>GST Symbol</LineSymbolSet>
+    <ShadeSymbolSet>GST Symbol</ShadeSymbolSet>
+    <MarkerSymbolIsImage>n</MarkerSymbolIsImage>
+    <SymbolMarkerImagePath />
+    <SymbolFGColor>255,251,82,0</SymbolFGColor>
+    <SymbolBGColor>255,255,128,64</SymbolBGColor>
+    <SymbolShadeOutlineColor>255,0,0,0</SymbolShadeOutlineColor>
+    <SymbolShadeOutlineSymbol>0</SymbolShadeOutlineSymbol>
+    <SymbolShadeImagePath />
+    <SymbolFGColorNight>255,255,128,64</SymbolFGColorNight>
+    <SymbolBGColorNight>255,255,128,64</SymbolBGColorNight>
+    <SymbolShadeOutlineColorNight>255,255,128,64</SymbolShadeOutlineColorNight>
+    <SymbolFGColorAerial>0,255,128,64</SymbolFGColorAerial>
+    <SymbolBGColorAerial>255,255,128,64</SymbolBGColorAerial>
+    <SymbolShadeOutlineColorAerial>255,255,128,64</SymbolShadeOutlineColorAerial>
+    <SymbolField>street</SymbolField>
+    <SymbolFieldValueList />
+    <UseSymbolSizeByScale>y</UseSymbolSizeByScale>
+    <SymbolSizeByScale>0,2000,14@2001,4000,10@4001,8000,8@8001,16000,6@16001,35000,4@35001,70000,2@70001,200000,2</SymbolSizeByScale>
+    <ShowLineCasing>n</ShowLineCasing>
+    <LineCasingColor>255,0,0,0</LineCasingColor>
+    <CasingScaleFrom>0</CasingScaleFrom>
+    <CasingScaleTo>50000</CasingScaleTo>
+ 	 </Symbol>
+	 
+	- LOCAL: 
+	
+	- RAMP: <Symbol>
+    <SymbolClassification>One symbol</SymbolClassification>
+    <SymbolSize>2</SymbolSize>
+    <LineShadeSymbol>0</LineShadeSymbol>
+    <MarkerSymbol>X</MarkerSymbol>
+    <MarkerSymbolSet>GST Symbol</MarkerSymbolSet>
+    <LineSymbolSet>GST Symbol</LineSymbolSet>
+    <ShadeSymbolSet>GST Symbol</ShadeSymbolSet>
+    <MarkerSymbolIsImage>n</MarkerSymbolIsImage>
+    <SymbolMarkerImagePath />
+    <SymbolFGColor>255,255,86,4</SymbolFGColor>
+    <SymbolBGColor>255,255,128,64</SymbolBGColor>
+    <SymbolShadeOutlineColor>255,0,0,0</SymbolShadeOutlineColor>
+    <SymbolShadeOutlineSymbol>0</SymbolShadeOutlineSymbol>
+    <SymbolShadeImagePath />
+    <SymbolFGColorNight>255,249,81,0</SymbolFGColorNight>
+    <SymbolBGColorNight>255,255,128,64</SymbolBGColorNight>
+    <SymbolShadeOutlineColorNight>255,255,128,64</SymbolShadeOutlineColorNight>
+    <SymbolFGColorAerial>0,255,128,64</SymbolFGColorAerial>
+    <SymbolBGColorAerial>255,255,128,64</SymbolBGColorAerial>
+    <SymbolShadeOutlineColorAerial>255,255,128,64</SymbolShadeOutlineColorAerial>
+    <SymbolField>street</SymbolField>
+    <SymbolFieldValueList />
+    <UseSymbolSizeByScale>y</UseSymbolSizeByScale>
+    <SymbolSizeByScale>0,2000,12@2001,4000,8@4001,8000,6@8001,16000,4@16001,35000,2@35001,70000,2@70001,200000,1</SymbolSizeByScale>
+    <ShowLineCasing>y</ShowLineCasing>
+    <LineCasingColor>255, 78, 78, 78</LineCasingColor>
+    <CasingScaleFrom>0</CasingScaleFrom>
+    <CasingScaleTo>50000</CasingScaleTo>
+ 	 </Symbol>
+
+**Possible changes**
+
+- Use pre-attack extents for hot links vs. pre-attack ICS points
 
 
